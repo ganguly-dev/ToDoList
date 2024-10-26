@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    background-color: #87A2FF;
+    height: 100vh;
+    width: 100vw;
+}
+
+.heading{
+    text-align: center;
+    padding: 30px;
+    color: black;
+    text-shadow: 2px 2px gray;
+    letter-spacing: 2px;
+}
+
+.todo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-container{
+    background-color: white;
+    height: max-content;
+    width: 50vw;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 10px 10px;
+}
+
+.list-item{
+    padding:20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-image: linear-gradient(#FFD7C4,#FFF4B5) ;
+    list-style-type: none;
+    margin-bottom: 5px;
+    font-family: 'Poppins';
+    display: flex;
+    align-items: center;
+}
+
+.list-check{
+    margin-right: 8px;
+    padding:10px;
+    height: 15px;
+    width:  15px;
+    border:0;
+    border-radius: 50%;
+    list-style-type: circle;
+    list-style: circle;
+}
+
+.add-button{
+    position: fixed;
+    height: 40px;
+    width:  40px;
+    bottom: 20%;
+    right: 20.5%;
+    border: 0;
+    border-radius: 50%;
+    background-color: #87A2FF ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(5px 5px 4px #000);
+
+}
+
+.add-sign{
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+
+}
+
+.addModal{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 200px;
+    width: 600px;
+    background-color: #FFF4B5;
+    border-radius: 8px;
+    border: 0;
+    position: absolute;
+    visibility: hidden;
+    z-index:9999;
+    filter: drop-shadow(3px 3px 4px #000);
+}
+
+.inp{
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding:  10px;
+    
+    width: 95%;
+
+    margin-top: 10px;
+
+   
+}
+
+.btn{
+    margin: 5px;
+    padding:  5px;
+    background-color: #FFD7C4;
+}
+
+.hand{
+    cursor:pointer;
+}
